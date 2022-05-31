@@ -19,6 +19,7 @@
     @include("components.navbar")
     @include("components.slider")
     @include("components.about-us")
+    @include("components.vision")
     
     @yield("content")
 
