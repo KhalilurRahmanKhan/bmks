@@ -1,4 +1,4 @@
-<div class="row header d-sm-none d-md-flex ">
+<div class="row header d-none d-md-flex  ">
     <div class="col-md-1 d-flex justify-content-center align-items-center">
         <img src="{{ asset('images/logo.png') }}" alt="" class="header-logo">
     </div>

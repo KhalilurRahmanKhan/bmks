@@ -6,3 +6,113 @@
     width: 100%;
     height: 100%;
 }
+.carousel{
+    position: relative ;
+}
+.slider-overlay{
+    position: absolute;
+    top: 50%;
+    left: 40%; 
+     display: flex;
+}
+
+
+.overlay-btn-blue {	
+    margin: 3px 5px;
+    border:1px solid #4285f4;
+    width: 185px;
+    height: 45px;
+    background-color: transparent;
+	position:relative;
+    font-weight: bold;
+    color: white;
+
+}
+
+.overlay-btn-blue:before {
+	content: '';
+   
+	position: absolute;	 
+    font-weight: bold; 
+    transition: all .5s ease;
+	top: 0;
+	left: -1%;
+	height: 100%;
+	width: 51%;
+	background-color:  #4285f4;   
+
+	
+}
+.overlay-btn-blue:after {
+	content: '';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;	 
+    font-weight: bold; 
+    transition: all .5s ease;
+	top: 0;
+	right: -1%;
+	height: 100%;
+	width: 101%;
+	background-color:  #4285f4;   
+
+	
+}
+.overlay-btn-blue span:after {
+	content: 'নিবন্ধন';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	position: absolute;	 
+    font-weight: bold; 
+    z-index: 5555555;
+	top: 0;
+	right: 0%;
+	height: 100%;
+	width: 100%;
+
+	
+}
+.overlay-btn-blue:hover:before {
+	left: 0%;
+	width: 0%;
+    z-index: 1;
+    color: black;
+  
+}
+.overlay-btn-blue:hover:after {
+    content: "";
+	right: 0%;
+	width: 0%;
+    z-index: 1;
+
+  
+}
+.overlay-btn-blue:hover {
+	background-color: transparent;
+  
+}
+
+
+.overlay-btn-transparent {	
+    margin: 3px 5px;
+    border:1px solid #4285f4;
+    width: 185px;
+    height: 45px;
+    background-color: transparent;
+    font-weight: bold;
+    color: #4285f4;
+    transition: all .5s ease;
+
+}
+
+
+.overlay-btn-transparent:hover {
+	background-color: #4285f4;
+    color: white;
+  
+}
+
+
+

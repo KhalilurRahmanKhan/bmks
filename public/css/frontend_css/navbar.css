@@ -38,6 +38,7 @@
     color: white;
 
 }
+
 .nav-btn:before {
 	content: 'আবেদন';
     display: flex;
@@ -49,9 +50,9 @@
 	top: 0;
 	left: 50%;
 	height: 100%;
-	width: 0;
+	width: 0%;
 	background-color: white;   
-   
+
 	
 }
 .nav-btn:hover:before {

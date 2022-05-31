@@ -8,34 +8,27 @@
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-<style>
-    .test {
-    font: 22px Arial;
-    display: inline-block;
-    padding: 1em 2em;
-    text-align: center;
-    color: white;
-    background: red; /* default color */
 
-    /* "to left" / "to right" - affects initial color */
-    background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
-}
-.test:hover {
-    background-position: left;
-}
-</style>
 
 </head>
 <body>
+
+
+    @include("components.preloader")
     @include("components.header")
     @include("components.navbar")
     @include("components.slider")
+    
     @yield("content")
 
+
+
+
     <script src="https://kit.fontawesome.com/b595dd4b2c.js" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+
 
 </body>
 </html>

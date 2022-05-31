@@ -10,4 +10,8 @@
       <img src="{{asset('images/b.jpg')}}" class="d-block w-100" alt="...">
     </div>
   </div>
+  <div class="slider-overlay">
+    <button class="overlay-btn-blue"><span>নিবন্ধন</span> </button>
+    <button class="overlay-btn-transparent">আবেদন </button>
+  </div>
 </div>
