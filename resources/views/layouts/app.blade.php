@@ -20,8 +20,8 @@
     @include("components.slider")
     @include("components.about-us")
     @include("components.vision")
+    @include("components.footer")
     
-    @yield("content")
 
 
 
