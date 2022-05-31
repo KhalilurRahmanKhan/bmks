@@ -8,7 +8,24 @@
     
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+<style>
+    .test {
+    font: 22px Arial;
+    display: inline-block;
+    padding: 1em 2em;
+    text-align: center;
+    color: white;
+    background: red; /* default color */
 
+    /* "to left" / "to right" - affects initial color */
+    background: linear-gradient(to left, salmon 50%, lightblue 50%) right;
+    background-size: 200%;
+    transition: .5s ease-out;
+}
+.test:hover {
+    background-position: left;
+}
+</style>
 
 </head>
 <body>

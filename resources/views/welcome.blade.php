@@ -1,5 +1,7 @@
 @extends("layouts.app")
 
 @section("content")
-welcome
+<div class="test">
+    vmn gvbmnv
+</div>
 @endsection
