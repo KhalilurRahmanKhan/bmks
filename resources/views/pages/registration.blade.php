@@ -1,7 +1,7 @@
 @extends("layouts.app")
 
 @section("content")
-<div class="container mt-5 mb-5">
+<div class="container-fluid mt-5 mb-5 registration-div">
     <div class="row justify-content-center">
         <div class="col-md-6">
             <center>
@@ -14,13 +14,13 @@
                 </div>
                 <div class="form-group">
                     <label for="password" class="form-label">পাসওয়ার্ড (ইংরেজি)*</label>
-                    <input type="password" id="password" name="password" class="form-control form-input shadow-none">
-                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    <input id="password" type="password" class="form-control form-input shadow-none" name="password">
+                    <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 <div class="form-group">
                     <label for="password_confirmation" class="form-label">পুনরায় পাসওয়ার্ড (ইংরেজি)*</label>
-                    <input type="password" id="password_confirmation" name="password_confirmation " class="form-control form-input shadow-none">
-                    <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+                    <input id="password_confirmation" type="password" class="form-control form-input shadow-none" name="password_confirmation">
+                    <span toggle="#password_confirmation" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                 </div>
                 <p class="form-p">*আপনার পাসওয়ার্ডে কমপক্ষে ৮টি অক্ষর থাকতে হবে।</p>
                 <p class="form-p"> *আপনার পাসওয়ার্ড সম্পূর্ণরূপে সংখ্যাসূচক হতে পারবে না।</p>

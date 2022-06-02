@@ -7,7 +7,7 @@
         <div class="navbar-collapse collapse show" id="navbarSupportedContent" style="">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto"">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"> হোম </a>
+              <a class="nav-link active" aria-current="page" href="/"> হোম </a>
             </li> 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">   আমাদের সম্পর্কে    </a>
@@ -22,7 +22,7 @@
               <a class="nav-link active" aria-current="page" href="registration">  রেজিস্ট্রেশন   </a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"> লগইন   </a>
+              <a class="nav-link active" aria-current="page" href="login"> লগইন   </a>
             </li> 
 
             <button class="nav-btn">আবেদন </button>
