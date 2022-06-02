@@ -19,7 +19,7 @@
               <a class="nav-link active" aria-current="page" href="#">   নোটিশ  </a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">  রেজিস্ট্রেশন   </a>
+              <a class="nav-link active" aria-current="page" href="registration">  রেজিস্ট্রেশন   </a>
             </li> 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#"> লগইন   </a>

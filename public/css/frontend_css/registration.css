@@ -1,0 +1,30 @@
+.form-input{
+    border: none;
+    border-bottom: 2px solid #d4d4d4;
+    border-radius: 0px;
+    padding: 5px 0px;
+    margin: 10px 0px;
+    font-size: 17px;
+}
+.form-label{
+    color: #777777;
+    font-size: 17px;
+}
+.form-p{
+    text-align: center;
+    margin: 4px;
+    color: #6c6767;
+    font-size: 16px;
+}
+.form-btn{
+    background-color: #4285f4;
+    padding: 10px 25px;
+    border: none;
+    color: white;
+    margin: 10px 0;
+}
+.field-icon{
+    float: right;
+    margin-top: -45px;
+    color: #777777;
+}
