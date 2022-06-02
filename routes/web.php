@@ -17,6 +17,9 @@ use App\Http\Controllers\AuthController;
 Route::get('/', function () {
     return view('pages.home');
 });
+Route::get('notice', function () {
+    return view('pages.notice');
+});
 
 Route::get('registration',[AuthController::class,'registration']);
 Route::get('login',[AuthController::class,'login']);

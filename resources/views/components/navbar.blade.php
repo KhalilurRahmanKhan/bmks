@@ -16,7 +16,7 @@
               <a class="nav-link active" aria-current="page" href="#"> যোগাযোগ   </a>
             </li> 
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">   নোটিশ  </a>
+              <a class="nav-link active" aria-current="page" href="notice">   নোটিশ  </a>
             </li> 
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="registration">  রেজিস্ট্রেশন   </a>
