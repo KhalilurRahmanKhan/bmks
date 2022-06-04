@@ -20,6 +20,12 @@ Route::get('/', function () {
 Route::get('notice', function () {
     return view('pages.notice');
 });
+Route::get('dashboard', function () {
+    return view('layouts.dashboard');
+});
+Route::get('dashboard/home', function () {
+    return view('pages.dashboard.home');
+});
 
 Route::get('registration',[AuthController::class,'registration']);
 Route::get('login',[AuthController::class,'login']);

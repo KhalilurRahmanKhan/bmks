@@ -19,3 +19,11 @@
           input.attr("type", "password");
         }
       });
+
+    
+  
+    function handleSidebarToggle(){
+      $(".sidebar").animate({
+        width: "toggle"
+    });
+    }
