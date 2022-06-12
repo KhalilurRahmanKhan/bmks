@@ -27,5 +27,6 @@ Route::get('dashboard/home', function () {
     return view('pages.dashboard.home');
 });
 
-Route::get('registration',[AuthController::class,'registration']);
-Route::get('login',[AuthController::class,'login']);
+Route::get('dashboard/registration',[AuthController::class,'registration']);
+Route::get('dashboard/login',[AuthController::class,'login']);
+Route::post('dashboard/store',[AuthController::class,'store']);

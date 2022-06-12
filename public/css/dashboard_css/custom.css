@@ -2,13 +2,13 @@
     height: 100vh;
     background-color: aliceblue;
 }
-.toggleBtn,.mobileToggleBtn{
+.mobileToggleBtn{
     margin-top: 10px;
 }
 
 
 @media screen and (max-width: 784px) {
-    .sidebar,.toggleBtn{
+    .sidebar{
         display: none;
     }
   }

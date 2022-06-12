@@ -20,10 +20,4 @@
         }
       });
 
-    
-  
-    function handleSidebarToggle(){
-      $(".sidebar").animate({
-        width: "toggle"
-    });
-    }
+   

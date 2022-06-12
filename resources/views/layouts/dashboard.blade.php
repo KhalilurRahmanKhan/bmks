@@ -18,9 +18,14 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-3 sidebar ">
-
+        <div class="row ">
+            <div class="col-md-3 sidebar text-center">
+                <ul class="list-unstyled mt-5">
+                    <li class="py-1 px-3 bg-primary m-1 text-white ">Home</li>
+                    <li class="py-1 px-3 bg-primary m-1 text-white">Notice</li>
+                    <li class="py-1 px-3 bg-primary m-1 text-white">Slider</li>
+                 
+                </ul>
             </div>
             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
                 <div class="offcanvas-header">
@@ -44,13 +49,19 @@
                 </div>
             </div>
             <div class="col-md-9">
-              <div class="mb-3">
-              <button class="btn btn-primary toggleBtn" onclick="handleSidebarToggle()"><i class="fa-solid fa-bars" ></i></button>
-                <button class="btn btn-primary mobileToggleBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-                <i class="fa-solid fa-bars "></i>
-                </button>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary mobileToggleBtn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Open Sidebar
+                    </button>
+                </div>
+                <div>
+                    <div class="row justify-between">
+                        <div class="col-11"></div>
+                        <div class="col-1"><button>Logout</button></div>
+                    </div>
+                </div>
 
-              </div>
+
                 @yield("dashboard_content")
 
             </div>
