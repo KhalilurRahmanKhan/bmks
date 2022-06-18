@@ -1,18 +1,25 @@
 .sidebar{
     height: 100vh;
     background-color: aliceblue;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+.dashboard_content{
+
 }
 .mobileToggleBtn{
     margin-top: 10px;
 }
 
 
-@media screen and (max-width: 784px) {
+@media screen and (max-width: 575px) {
     .sidebar{
         display: none;
     }
   }
-@media screen and (min-width: 784px) {
+@media screen and (min-width: 575px) {
     .mobileToggleBtn{
         display: none;
     }

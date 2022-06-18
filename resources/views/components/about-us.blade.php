@@ -4,5 +4,10 @@
         <div class="col-md-3  "><img class="w-100 h-100 " src="{{asset("images/b.jpg")}}" alt=""></div>
         <div class="col-md-3 "><img  class="w-100 h-100" src="{{asset("images/c2.jpg")}}" alt=""></div>
         <div class="col-md-3 "><img  class="w-100 h-100" src="{{asset("images/drive.jpg")}}" alt=""></div>
+        <div class="col-md-3 "><img  class="w-100 h-100" src="{{asset("images/drive.jpg")}}" alt=""></div>
+        <div class="col-md-3 "><img  class="w-100 h-100" src="{{asset("images/drive.jpg")}}" alt=""></div>
+        <div class="col-md-3 "><img  class="w-100 h-100" src="{{asset("images/drive.jpg")}}" alt=""></div>
+        <div class="col-md-3 "><img  class="w-100 h-100" src="{{asset("images/drive.jpg")}}" alt=""></div>
+        <div class="col-md-3 "><img  class="w-100 h-100" src="{{asset("images/drive.jpg")}}" alt=""></div>
     </div>
 </div>

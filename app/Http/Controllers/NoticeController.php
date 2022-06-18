@@ -14,7 +14,7 @@ class NoticeController extends Controller
      */
     public function index()
     {
-        //
+        return view('pages/dashboard/notice');
     }
 
     /**
@@ -35,7 +35,26 @@ class NoticeController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'notice' => 'required',
+        ]);
+        $return_after_create = Notice::create([
+            'notice' => $request->notice,
+        ]);
+
+
+
+        if($request->hasFile('file')){
+            $uploaded_file = $request->file("file");
+            $uploaded_file_new_name = $return_after_create->id.".".$uploaded_file->extension();
+            $request->file("file")->move('uploads/notice',$uploaded_file_new_name);
+
+            $return_after_create->file = $uploaded_file_new_name;
+            $return_after_create->save();
+        }
+    
+
+        return back();
     }
 
     /**

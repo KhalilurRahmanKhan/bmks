@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('notices', function (Blueprint $table) {
             $table->id();
+            $table->string('notice')->nullable();
+            $table->string('file')->default('notice.png')->nullable();
             $table->timestamps();
         });
     }

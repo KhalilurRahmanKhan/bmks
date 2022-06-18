@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\NoticeController;
+use App\Http\Controllers\SliderController;
+use App\Http\Controllers\ProjectController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +20,7 @@ use App\Http\Controllers\AuthController;
 Route::get('/', function () {
     return view('pages.home');
 });
-Route::get('notice', function () {
+Route::get('frontend/notice', function () {
     return view('pages.notice');
 });
 Route::get('dashboard', function () {
@@ -27,6 +30,20 @@ Route::get('dashboard/home', function () {
     return view('pages.dashboard.home');
 });
 
-Route::get('dashboard/registration',[AuthController::class,'registration']);
+Route::get('/registration',[AuthController::class,'registration']);
+Route::post('/store',[AuthController::class,'store']);
 Route::get('dashboard/login',[AuthController::class,'login']);
-Route::post('dashboard/store',[AuthController::class,'store']);
+Route::get('/login',[AuthController::class,'userlogin']);
+Route::post('login',[AuthController::class,'authenticate']);
+Route::post('logout',[AuthController::class,'userlogout']);
+Route::post('dashboard/check',[AuthController::class,'check']);
+Route::post('dashboard/logout',[AuthController::class,'logout']);
+
+
+Route::get('slider',[SliderController::class,'index']);
+Route::post('slider/store',[SliderController::class,'store']);
+
+
+
+Route::resource('notice', NoticeController::class);
+Route::resource('project', ProjectController::class);

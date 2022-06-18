@@ -7,7 +7,8 @@
             <center>
                 <h3 class="mb-3">লগ ইন</h3>
             </center>
-            <form action="">
+            <form action="{{url('login')}}" method="post">
+                @csrf
                 <div class="form-group">
                     <input type="number" id="mobile" name="mobile" class="form-control form-input shadow-none" placeholder="মোবাইল নাম্বার">
                 </div>
@@ -19,7 +20,7 @@
 
                 <div class="row justify-content-between mt-5">
                     <div class="col-md-6 d-flex justify-content-start align-items-center"><p class="form-p"><a href="registration" class="text-decoration-none">এখানে ক্লিক করে রেজিস্ট্রেশন করুন।</a></p></div>
-                    <div class="col-md-6 d-flex justify-content-end align-items-center" ><button class="form-btn tex-center f-right">সমর্পণ</button></div>
+                    <div class="col-md-6 d-flex justify-content-end align-items-center" ><button type="submit" class="form-btn tex-center f-right">সমর্পণ</button></div>
                    
                 </div>
 
