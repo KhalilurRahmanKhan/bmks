@@ -31,6 +31,7 @@ Route::get('dashboard/home', function () {
 });
 
 Route::get('/registration',[AuthController::class,'registration']);
+Route::get('/admin/view',[AuthController::class,'adminView']);
 Route::post('/store',[AuthController::class,'store']);
 Route::get('dashboard/login',[AuthController::class,'login']);
 Route::get('/login',[AuthController::class,'userlogin']);

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->integer('mobile')->unique();
             $table->string('password');
             $table->string('role')->nullable();
+            $table->boolean('block')->default(false);
             $table->timestamps();
         });
     }

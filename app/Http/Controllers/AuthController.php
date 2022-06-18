@@ -10,6 +10,13 @@ use App\Models\User;
 
 class AuthController extends Controller
 {
+
+
+    public function adminView(){
+        return view("pages/dashboard/admins/index",[
+            'admins'=>User::where('role',1)->get(),
+        ]);
+    }
     public function registration(){
         return view("pages.registration");
     }
@@ -32,6 +39,21 @@ class AuthController extends Controller
         ]);
        
         return back()->with('msg','Wait for your role confirmation!');
+
+    }
+    public function adminCreate(Request $request){
+        echo("hello");
+        // $request->validate([
+        //     "mobile" => "required|min:11",
+        //     "password" => "required|confirmed|min:8",
+        // ]);
+        
+        // User::create([
+        //     "mobile" => "$request->mobile",
+        //     "password" => Hash::make($request->password),
+        // ]);
+       
+        // return back()->with('msg','Wait for your role confirmation!');
 
     }
 
