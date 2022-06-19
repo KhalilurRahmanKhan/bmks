@@ -14,16 +14,16 @@
 
 
   <div class="container">
-  
-      <div class="row justify-content-center mt-5">
-        <div class="col-md-5 p-3" style="border:1px solid black ;border-radius:10px;">
-        <form  action="{{url('dashboard/check')}}" method="post">
-    @csrf
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-md-5 p-3" style="border:1px solid black ;border-radius:10px;">
+        <form action="{{url('check')}}" method="post">
+          @csrf
           <div class="mb-3">
-            <label for="" class="form-label">Email address</label>
-            <input type="email" name="email" class="form-control" id="" placeholder="name@example.com">
+            <label for="" class="form-label">Username</label>
+            <input type="text" name="username" class="form-control" id="" placeholder="">
           </div>
-          @error("email")
+          @error("username")
           {{$message}}
           @enderror
           <div class="mb-3">
@@ -33,9 +33,9 @@
           @error("password")
           {{$message}}
           @enderror
-          <button type="submit" class="btn btn-primary">Login</button >
-        </div>
+          <button type="submit" class="btn btn-primary">Login</button>
       </div>
+    </div>
     </form>
   </div>
 

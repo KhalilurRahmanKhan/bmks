@@ -23,14 +23,14 @@
                     <th scope="row">{{$loop->iteration}}</th>
                     <td>{{$admin->username}}</td>
                     <td>
-                        <button>Block</button>
-                        <button>Delete</button>
+                        <button class="btn btn-warning btn-sm"><i class="fa-solid fa-ban"></i></button>
+                        <button class="btn btn-danger btn-sm"><i class="fa fa-trash" aria-hidden="true"></i></button>
 
                     </td>
         
 
                     @empty
-                    <td>No data</td>
+                    <td colspan="5" class="text-center text-dangter">No data</td>
                 </tr>
                 @endforelse
 

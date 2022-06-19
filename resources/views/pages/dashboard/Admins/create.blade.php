@@ -9,7 +9,7 @@
                 {{ session('status') }}
             </div>
             @endif
-            <form action="{{url('project')}}" method="post">
+            <form action="{{url('admin/store')}}" method="post">
                 @csrf
                 <div class="mb-3">
                     <label for="" class="form-label"><b>Username</b></label>
@@ -20,14 +20,14 @@
                 @enderror
                 <div class="mb-3">
                     <label for="" class="form-label"><b>Mobile</b></label>
-                    <input type="text" name="mobile" class="form-control">
+                    <input type="number" name="mobile" class="form-control">
                 </div>
                 @error("mobile")
                 <small class="text-danger"> {{$message}}</small>
                 @enderror
                 <div class="mb-3">
                     <label for="" class="form-label"><b>Password</b></label>
-                    <input type="text" name="password" class="form-control">
+                    <input type="password" name="password" class="form-control">
                 </div>
                 @error("password")
                 <small class="text-danger"> {{$message}}</small>
