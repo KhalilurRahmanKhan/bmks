@@ -52,5 +52,7 @@ Route::post('slider/store',[SliderController::class,'store'])->middleware('auth'
 
 
 Route::resource('notice', NoticeController::class)->middleware('auth');
+Route::get('notice/status/{notice}',[NoticeController::class,'status'])->middleware('auth');
+
 Route::resource('project', ProjectController::class)->middleware('auth');
 Route::resource('course', CourseController::class)->middleware('auth');

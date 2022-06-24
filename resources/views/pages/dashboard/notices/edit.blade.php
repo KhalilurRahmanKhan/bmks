@@ -1,13 +1,20 @@
 @extends("layouts.dashboard")
 @section("dashboard_content")
 <div class="container">
-    <div class="row mt-5 justify-content-center">
+    <div class="row  justify-content-center">
+        <h3>Notice > Edit</h3>
         <div class="col-md-6 p-3" style="border:1px solid black ;border-radius:10px;">
-            <form action="{{url('notice')}}" method="post" enctype="multipart/form-data">
+            @if (session('status'))
+            <div class="alert alert-success" role="alert">
+         {{ session('status') }}
+            </div>
+            @endif
+            <form action="{{url('notice')}}/{{$notice->id}}" method="post" enctype="multipart/form-data">
                 @csrf
+                @method('put')
                 <div class="mb-3">
                     <label for="" class="form-label">Notice</label>
-                    <textarea name="notice" id="editor1" class="form-control" cols="30" rows="10"></textarea>
+                    <textarea name="notice"  id="editor1" class="form-control" cols="30" rows="10">{{$notice->notice}}</textarea>
                 </div>
                 @error("notice")
                 {{$message}}
@@ -16,12 +23,13 @@
                     <label for="" class="form-label">File</label>
                     <input type="file" name="file" class="form-control" id="">
                 </div>
-
-                <button type="submit" class="btn btn-primary">Add</button>
+                <div>
+                    <button type="submit" class="btn btn-primary mt-0">Add</button>
+                </div>
         </div>
 
-    </div>
 
+    </div>
     <script src="{{asset('ckeditor/ckeditor.js')}}"></script>
     <script>
             ClassicEditor.create(document.querySelector('#editor1'))
@@ -29,5 +37,7 @@
                 console.log(error);
             });
     </script>
+ 
+
 </div>
 @endsection

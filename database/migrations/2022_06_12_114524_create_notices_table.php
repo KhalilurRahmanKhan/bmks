@@ -17,6 +17,7 @@ return new class extends Migration
             $table->id();
             $table->string('notice')->nullable();
             $table->string('file')->default('notice.png')->nullable();
+            $table->boolean('active')->default(true);
             $table->timestamps();
         });
     }
