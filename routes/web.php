@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\CourseController;
 
 /*
 |--------------------------------------------------------------------------
@@ -52,3 +53,4 @@ Route::post('slider/store',[SliderController::class,'store'])->middleware('auth'
 
 Route::resource('notice', NoticeController::class)->middleware('auth');
 Route::resource('project', ProjectController::class)->middleware('auth');
+Route::resource('course', CourseController::class)->middleware('auth');

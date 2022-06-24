@@ -44,6 +44,13 @@
                         <p style="margin: 1px auto; width:80%; background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('project')}}" class="drop-item" href="#">View</a></p>
                         <p style="margin: 1px auto; width:80%;background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('project/create')}}" class="drop-item" href="#">Create</a></p>
                     </div>
+                    <button class="dropdown-btn py-1 px-3  bg-primary m-1 text-white " style="padding:5px; width:100%;border:none;">Course
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <p style="margin: 1px auto; width:80%; background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('course')}}" class="drop-item" href="#">View</a></p>
+                        <p style="margin: 1px auto; width:80%;background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('course/create')}}" class="drop-item" href="#">Create</a></p>
+                    </div>
 
                     
                     <button class="dropdown-btn py-1 px-3  bg-primary m-1 text-white " style="padding:5px; width:100%;border:none;">Admins
