@@ -46,6 +46,8 @@
 
 
                     <li class="py-1 px-3 bg-primary m-1 text-white" style="padding:5px;width:100%;"><a class="text-white text-decoration-none" href="{{url('slider')}}">Slider</a></li>
+                    
+                    <li class="py-1 px-3 bg-primary m-1 text-white" style="padding:5px;width:100%;"><a class="text-white text-decoration-none" href="{{url('gallery')}}">Gallery</a></li>
 
 
                     <button class="dropdown-btn py-1 px-3  bg-primary m-1 text-white " style="padding:5px; width:100%;border:none;">Projects
