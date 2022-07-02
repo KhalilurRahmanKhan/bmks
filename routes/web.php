@@ -5,6 +5,8 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\NoticeController;
 use App\Http\Controllers\SliderController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\CourseController;
+use App\Http\Controllers\GalleryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,8 +49,13 @@ Route::post('dashboard/logout',[AuthController::class,'logout'])->middleware('au
 
 Route::get('slider',[SliderController::class,'index'])->middleware('auth');
 Route::post('slider/store',[SliderController::class,'store'])->middleware('auth');
+Route::get('gallery',[GalleryController::class,'index'])->middleware('auth');
+Route::post('gallery/store',[GalleryController::class,'store'])->middleware('auth');
 
 
 
 Route::resource('notice', NoticeController::class)->middleware('auth');
+Route::get('notice/status/{notice}',[NoticeController::class,'status'])->middleware('auth');
+
 Route::resource('project', ProjectController::class)->middleware('auth');
+Route::resource('course', CourseController::class)->middleware('auth');

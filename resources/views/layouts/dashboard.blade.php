@@ -35,14 +35,36 @@
                 <h3 class="bg-primary text-white mb-3" style="padding: 9px 0px ;   background-image: linear-gradient(#0d6efd, white);">BMKS</h3>
                 <ul class="list-unstyled " style="width:70% ;margin:auto;">
 
-                    <li class="py-1 px-4 bg-primary m-1 text-white" style="padding:5px;width:100%;"><a class="text-white text-decoration-none" href="{{url('notice')}}">Notice</a></li>
+
+                    <button class="dropdown-btn py-1 px-3  bg-primary m-1 text-white " style="padding:5px; width:100%;border:none;">Notice
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <p style="margin: 1px auto; width:80%; background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('notice')}}" class="drop-item" href="#">View</a></p>
+                        <p style="margin: 1px auto; width:80%;background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('notice/create')}}" class="drop-item" href="#">Create</a></p>
+                    </div>
+
+
                     <li class="py-1 px-3 bg-primary m-1 text-white" style="padding:5px;width:100%;"><a class="text-white text-decoration-none" href="{{url('slider')}}">Slider</a></li>
+                    
+                    <li class="py-1 px-3 bg-primary m-1 text-white" style="padding:5px;width:100%;"><a class="text-white text-decoration-none" href="{{url('gallery')}}">Gallery</a></li>
+
+
                     <button class="dropdown-btn py-1 px-3  bg-primary m-1 text-white " style="padding:5px; width:100%;border:none;">Projects
                         <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="dropdown-container">
                         <p style="margin: 1px auto; width:80%; background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('project')}}" class="drop-item" href="#">View</a></p>
                         <p style="margin: 1px auto; width:80%;background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('project/create')}}" class="drop-item" href="#">Create</a></p>
+                    </div>
+
+
+                    <button class="dropdown-btn py-1 px-3  bg-primary m-1 text-white " style="padding:5px; width:100%;border:none;">Course
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-container">
+                        <p style="margin: 1px auto; width:80%; background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('course')}}" class="drop-item" href="#">View</a></p>
+                        <p style="margin: 1px auto; width:80%;background-color: #3280f4;color: white;border-radius: 5px;"><a href="{{url('course/create')}}" class="drop-item" href="#">Create</a></p>
                     </div>
 
                     

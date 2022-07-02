@@ -2,7 +2,16 @@
 @section("dashboard_content")
 <div class="container">
     <div class="row mt-5 justify-content-center">
+<<<<<<< HEAD:resources/views/pages/dashboard/notice.blade.php
         <div class="col-md-6 p-3" style="border:1px solid #ddd1d1 ;border-radius:10px;">
+=======
+        <div class="col-md-6 p-3" style="border:1px solid black ;border-radius:10px;">
+        @if(session('status'))
+        <div class="alert alert-danger">
+        {{session('status')}}
+        </div>
+        @endif
+>>>>>>> 877d115ae00a7ef059f0b93440b4b65fa1270c20:resources/views/pages/dashboard/notices/create.blade.php
             <form action="{{url('notice')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">
