@@ -17,7 +17,7 @@
     <form method="post" action="{{url('dashboard/store')}}">
       @csrf
       <div class="row justify-content-center mt-5">
-        <div class="col-md-5 p-3" style="border:1px solid black ;border-radius:10px;">
+        <div class="col-md-5 p-3" style="border:1px solid #ddd1d1 ;border-radius:10px;">
           <div class="mb-3">
             <label for="" class="form-label">Email address</label>
             <input type="email" name="email" class="form-control" id="" placeholder="name@example.com">

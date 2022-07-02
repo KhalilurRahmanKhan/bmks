@@ -16,7 +16,7 @@
   <div class="container">
 
     <div class="row justify-content-center mt-5">
-      <div class="col-md-5 p-3" style="border:1px solid black ;border-radius:10px;">
+      <div class="col-md-5 p-3" style="border:1px solid #ddd1d1 ;border-radius:10px;">
         <form action="{{url('check')}}" method="post">
           @csrf
           <div class="mb-3">

@@ -2,7 +2,7 @@
 @section("dashboard_content")
 <div class="container">
     <div class="row mt-5 justify-content-center">
-        <div class="col-md-6 p-3" style="border:1px solid black ;border-radius:10px;">
+        <div class="col-md-6 p-3" style="border:1px solid #ddd1d1 ;border-radius:10px;">
             <form action="{{url('notice')}}" method="post" enctype="multipart/form-data">
                 @csrf
                 <div class="mb-3">

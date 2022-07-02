@@ -5,7 +5,7 @@
     <div class="row mt-5 px-5 justify-content-center">
         @if(session('status'))
         <div class="alert alert-danger">
-        {{session('status')}}
+            {{session('status')}}
         </div>
         @endif
         <table class="table">
@@ -30,7 +30,7 @@
                         <form action="{{url('project')}}/{{$project->id}}" method="post">
                             @csrf
                             @method('delete')
-                            <button class="btn btn-sm btn-danger" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
+                            <button onclick="return confirm('Are you sure?')"  class="btn btn-sm btn-danger" type="submit"><i class="fa fa-trash" aria-hidden="true"></i></button>
                         </form>
                     </td>
 

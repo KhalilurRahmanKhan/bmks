@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row  justify-content-center">
         <h3>Project > Create</h3>
-        <div class="col-md-6 p-3" style="border:1px solid black ;border-radius:10px;">
+        <div class="col-md-6 p-3" style="border:1px solid #ddd1d1 ;border-radius:10px;">
             @if (session('status'))
             <div class="alert alert-success" role="alert">
          {{ session('status') }}
